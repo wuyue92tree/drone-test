@@ -10,7 +10,9 @@ steps:
     path: /var/run/docker.sock
   commands:
   - docker ps -a
-
+  when:
+    branch:
+      - master
 volumes:
 - name: dockersock
   host:
