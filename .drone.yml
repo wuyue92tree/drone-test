@@ -9,6 +9,13 @@ platform:
 
 steps:
 - name: greeting
+  environment:
+    USERNAME:
+      from_secret: docker_username
+    PASSWORD:
+      from_secret: docker_password
   commands:
   - whoami
   - docker info
+  - echo ${USERNAME}
+  - echo ${PASSWORD}
