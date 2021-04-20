@@ -17,5 +17,5 @@ steps:
   commands:
   - whoami
   - docker info
-  - echo ${USERNAME}
-  - echo ${PASSWORD}
+  - echo $USERNAME
+  - echo $PASSWORD
